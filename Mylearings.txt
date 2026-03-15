@@ -155,6 +155,37 @@ False
 
 
 
+Numbers in Python
+
+
+
+Strings in Python
+
+num_list= '0123455565'
+num_list[:]
+0123455565
+num_list[3:]
+3455565
+num_list[0:7:2]
+0245
+num_list[0:7:3]
+035
+
+
+upper()
+lower()
+strip()        ---> Removes the extra space from the string
+replace()
+e.g. chai = "Lemon Chai"
+print(chai.replace("Lemon","Ginger"))
+Ginger Chai
+chai
+Lemon Chai
+
+
+
+
+
 
 
 
