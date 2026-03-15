@@ -245,6 +245,74 @@ tea_varieties
 
 
 
+Loops 
+-------------------
+
+tea_varieties = ["Green","Black","Herbal","Lemon"]
+for tea in tea_varieties:
+  print(tea)
+Green
+Black
+Herbal
+Lemon
+
+for tea in tea_varieties:
+  print(tea, end="-")
+Green-Black-Herbal-Lemon-
+
+
+if "Oolong" in tea_vareties:
+  print("I have Oolong tea")
+                                  --> returns empty as it don't have Oolong tea 
+
+tea_varieties.append("Oolong")
+if "Oolong" in tea_varieties:
+  print("I have Oolong tea")
+I have Oolong tea
+print(tea_varieties)
+["Green","Black","Herbal","Lemon","Oolong"]
 
 
 
+tea_varieties.pop()
+Oolong
+print(tea_varieties)
+["Green","Black","Herbal","Lemon"]
+
+tea_varieties.remove("Herbal")
+print("tea_varieties")
+["Green","Black","Lemon"]
+
+
+
+tea_varieties.insert(1,"Oolong")
+["Green","Oolong","Black","Lemon"]
+
+
+tea_varieties_copy = tea_varieties.copy()
+tea_varieties_copy.append("Masala")
+print(tea_varieties_copy)
+["Green","Black","Lemon","Masala"]
+print(tea_varieties)
+["Green","Black","Lemon"]
+
+
+
+range(10)
+range(0,10)
+print(range(10))
+range(0,10)
+
+y= range(10)
+print(y)
+range(0,10)
+
+Squared_num = [x**2 for x in range(10)]
+squared_num
+[0,1,4,9,16,25,36,49,64,81]
+
+
+
+cube_num = [y**3 for y in range (5)]
+cube_num
+[0,1,8,27,64]
