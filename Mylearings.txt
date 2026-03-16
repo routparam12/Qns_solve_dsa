@@ -416,4 +416,18 @@ squared_num
 
 
 
+squared_num.clear()
+squared_num
+{}
+keys = ["Masala", "Ginger", "lemon"]
+keys
+['Masala','Ginger','Lemon']
+default_value = "Delicious"
+new_dict = dict.fromkeys(keys, default_value)
+new_dict
+{'Masala': 'Delicious', 'Ginger': 'Delicious', 'Lemon': 'Delicious'}
+new_dict  = dict.fromkeys(keys, keys)
+new_dict
+{'Masala':['Masala','Ginger','Lemon'],'Ginger':['Masala','Ginger','Lemon'], 'Lemon':['Masala','Ginger','Lemon']}
 
+new_dict = dict.fromkeys(keys,default_values)
