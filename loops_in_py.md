@@ -36,6 +36,8 @@ while True:
         print(x)
     except StopIteration:     # raised when items run out
         break
+
+        
 Here's a diagram of the full flow:
   ::view-transition-group(*),
   ::view-transition-old(*),
@@ -43,7 +45,9 @@ Here's a diagram of the full flow:
     animation-duration: 0.25s;
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   }
-VvisualizeVvisualize show_widgetThe two special methods
+
+  
+Visualize show_widget The two special methods
 Any object can be looped over if it implements:
 
 __iter__(self) — called by iter(), returns the iterator object
