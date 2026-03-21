@@ -10,7 +10,8 @@ next(iterator) — fetches the next item, one at a time
 <img width="500" height="240" alt="Screenshot 2026-03-21 093608" src="https://github.com/user-attachments/assets/25776d1c-3895-4fa5-be58-5d1815fbe49e" />
 
 
-<img width="500" height="240" alt="Screenshot 2026-03-21 093608" src="https://github.com/user-attachments/assets/9c52783f-e767-4126-8f75-4b37930ed099" />
+<img width="1410" height="1078" alt="image" src="https://github.com/user-attachments/assets/d53aedd4-3871-4ba3-a1e0-196384e875ae" />
+
 
 So this loop:
 pythonfor x in [1, 2, 3]:
