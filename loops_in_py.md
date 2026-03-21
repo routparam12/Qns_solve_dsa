@@ -74,4 +74,96 @@ for x in count_up(5):   # works perfectly as an iterable
 Each call to next() resumes the function from where it left off at the yield. This is how Python can loop over infinite sequences without running out of memory.
 
 Key takeaways
-The for loop is syntactic sugar over the iterator protocol. Any object that defines __iter__ and __next__ can be looped — that's why for works uniformly on lists, strings, files, generators, database cursors, HTTP response streams, and anything else you can imagine. Sonnet 4.6
+The for loop is syntactic sugar over the iterator protocol. Any object that defines __iter__ and __next__ can be looped — that's why for works uniformly on lists, strings, files, generators, database cursors, HTTP response streams, and anything else you can imagine. 
+
+
+Python iterators handle files differently 
+Lets see how?
+
+create a file 
+chai.py
+(
+import time
+print("chai is here")
+username = "Param"
+print(username)
+)
+
+
+for line in open(chai.py):
+    print(line)
+import time
+print("chai is here")
+username = "Param"
+print(username)
+    
+>>f.open('chai.py')
+>>iter(f) is f
+True
+>>iter(f) is f.__iter__()
+>>True
+
+
+
+mylist=[1,2,3,4]
+iter(mylist) is mylist
+False
+
+
+
+D = {'a':1,'b':2}
+for key in D.keys():
+    print(key)
+a
+b
+
+I = __iter__(D)
+next(I)
+'a'
+next(I)
+'b'
+next(I)
+StopIteration
+
+
+R = range(5)
+R
+range(0,5)
+iter(R)
+I = iter(R)
+next(I)
+1
+next(I)
+2
+...
+
+f = open('chai.py')
+while true:
+    line = f.readline()
+    if not line: break
+    print(line, end='')
+
+
+how iteration works with list?
+List don't have iter tool like file have 
+
+
+variable gets the reference of first object of the list
+
+myList = {1,2,3,4}
+I = iter(myList)
+>>I 
+>><List_iterator object at 0x102f4fa30>
+>>I.__next__()
+>>2
+>>I.__next__()
+>>3
+>>I.__next__()
+>>4
+>>I.__next__()
+>>StopIteration
+>>
+
+
+
+
