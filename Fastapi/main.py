@@ -43,7 +43,7 @@ def view_patient(
 @app.get('/sort')
 def sort_patients(
     sort_by: str = Query(
-        ...,
+        ...,            
         description="Field to sort by",
         example="BMI,Height,Weight",
     ),
