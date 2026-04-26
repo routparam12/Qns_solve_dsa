@@ -1,0 +1,8 @@
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+pydantic[email]==2.12.5
+rapidfuzz==3.14.5
+sqlalchemy==2.0.36
+# psycopg2-binary==2.9.12
+pymysql==1.0.3
+python-dotenv==1.0.1
